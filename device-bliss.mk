@@ -5,9 +5,13 @@ PRODUCT_PACKAGES += libion
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.fingerprint=fpc
 
-# Tethering
-PRODUCT_PROPERTY_OVERRIDES += \
-    net.tethering.noprovisioning=true
+# IMS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay-bliss
+
+# Tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
