@@ -22,3 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Self Extractor blobs that can be built
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
+
+# Privileged app permissions
+PRODUCT_COPY_FILES += \
+    device/google/taimen/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
