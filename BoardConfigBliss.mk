@@ -1,7 +1,5 @@
 
 # Custom board config for taimen
-# Kernel defconfig
-TARGET_KERNEL_CONFIG := custom_defconfig
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
