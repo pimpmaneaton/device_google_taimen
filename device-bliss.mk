@@ -4,6 +4,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IMS
 PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager.xml \
     com.android.ims.rcsmanager \
     RcsService \
     PresencePolling
@@ -22,10 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1
-
-# Self Extractor blobs that can be built
-PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0
 
 # Privileged app permissions
 PRODUCT_COPY_FILES += \
