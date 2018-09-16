@@ -1,13 +1,13 @@
 [
   {
-    "repository":   "DirtyUnicorns/android_kernel_google_wahoo",
+    "repository":   "pimpmaneaton/android_kernel_google_wahoo",
     "target_path":  "kernel/google/wahoo",
-    "branch":       "p9x"
+    "branch":       "p9.0"
   },
   {
-    "repository":   "DirtyUnicorns/android_device_google_wahoo",
+    "repository":   "pimpmaneaton/android_device_google_wahoo",
     "target_path":  "device/google/wahoo",
-    "branch":       "p9x"
+    "branch":       "p9.0"
   },
   {
     "repository":  "DirtyUnicorns/android_vendor_google",
