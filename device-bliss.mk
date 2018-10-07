@@ -11,6 +11,9 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay-bliss
+# Pixel Experience
+PRODUCT_COPY_FILES += \
+  device/google/taimen/nexus.xml:system/etc/sysconfig/nexus.xml
 
 # ModemService
 PRODUCT_COPY_FILES += \
