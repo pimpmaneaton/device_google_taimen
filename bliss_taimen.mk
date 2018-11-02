@@ -32,6 +32,11 @@ PRODUCT_MODEL := Pixel 2 XL
 TARGET_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+#Apps
+PRODUCT_PACKAGES += \
+    Gallery2 \
+    Music
+
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
