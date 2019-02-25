@@ -42,6 +42,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
+# Kernel Modules Config
+PRODUCT_COPY_FILES += \
+    device/google/taimen/init.insmod.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg \
+    device/google/taimen/init.insmod_charger.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod_charger.cfg
+
 # Logging
 PRODUCT_COPY_FILES += \
     device/google/taimen/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_HARDWARE).logging.rc
@@ -121,9 +126,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.vibrator.hal.tick.duration=4 \
   ro.vibrator.hal.heavyclick.duration=12
 
-# Enable Perfetto traced
+# Enable Perfetto traced and heapprofd
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.traced.enable=1
+    persist.traced.enable=1 \
+    persist.heapprofd.enable=1 \
 
 # Early phase offset for SurfaceFlinger (b/75985430)
 PRODUCT_PROPERTY_OVERRIDES += \
