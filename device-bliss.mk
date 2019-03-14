@@ -2,12 +2,6 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.fingerprint=fpc
 
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
- PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # IMS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager.xml \
